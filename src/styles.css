@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.title {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7986cb;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
