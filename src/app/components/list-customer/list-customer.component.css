@@ -1,0 +1,44 @@
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Table */
+table {
+  width: 100%;
+}
+
+.table-container {
+  overflow: auto;
+  max-width: auto;
+}
+
+td,
+th {
+  width: 20%;
+}
+
+.container-actions {
+  min-width: 180px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 24px;
+  color: #4e4e4e;
+}
+
+.delete {
+  color: #bd0e0e;
+}
+
+/* Input */
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 50%;
+}
