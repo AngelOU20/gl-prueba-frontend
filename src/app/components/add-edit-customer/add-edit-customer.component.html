@@ -1,1 +1,88 @@
-<p>add-edit-customer works!</p>
+<header class="title">
+  <h1>{{ operation }} Cliente</h1>
+</header>
+
+<app-spinner *ngIf="isLoading"></app-spinner>
+
+<section class="container">
+  <mat-card class="card">
+    <button
+      routerLink="/list-customers"
+      mat-icon-button
+      aria-label="navigate before"
+      matTooltip="Regresar a la lista"
+    >
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+
+    <mat-card-header class="card-title">Datos del cliente</mat-card-header>
+    <form
+      [formGroup]="form"
+      (ngSubmit)="addEditCustomer()"
+      class="card-content"
+    >
+      <mat-form-field>
+        <mat-label>Nombre</mat-label>
+        <input formControlName="name" matInput />
+        <mat-error *ngIf="form.get('name')?.hasError('required')">
+          El nombre es requerido
+        </mat-error>
+      </mat-form-field>
+
+      <mat-grid-list cols="2" rowHeight="80px">
+        <mat-grid-tile>
+          <mat-form-field class="full-width" style="margin-right: 10px">
+            <mat-label>Email</mat-label>
+            <input type="email" formControlName="email" matInput />
+            <mat-error *ngIf="form.get('email')?.hasError('required')">
+              El email es requerido
+            </mat-error>
+          </mat-form-field>
+        </mat-grid-tile>
+
+        <mat-grid-tile>
+          <mat-form-field class="full-width" style="margin-left: 10px">
+            <mat-label>Número de teléfono</mat-label>
+            <input formControlName="phoneNumber" matInput />
+            <mat-error *ngIf="form.get('phoneNumber')?.hasError('required')">
+              El número de teléfono es requerido
+            </mat-error>
+          </mat-form-field>
+        </mat-grid-tile>
+      </mat-grid-list>
+
+      <mat-form-field>
+        <mat-label>Dirección</mat-label>
+        <input formControlName="address" matInput />
+        <mat-error *ngIf="form.get('address')?.hasError('required')">
+          La dirección es requerida
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Ciudad</mat-label>
+        <input formControlName="city" matInput />
+        <mat-error *ngIf="form.get('city')?.hasError('required')">
+          La ciudad es requerida
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>País</mat-label>
+        <input formControlName="country" matInput />
+        <mat-error *ngIf="form.get('country')?.hasError('required')">
+          El país es requerido
+        </mat-error>
+      </mat-form-field>
+
+      <button
+        [disabled]="form.invalid"
+        type="submit"
+        mat-flat-button
+        color="primary"
+      >
+        Agregar
+      </button>
+    </form>
+  </mat-card>
+</section>
