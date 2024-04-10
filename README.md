@@ -6,15 +6,27 @@ Este repositorio contiene el código fuente del frontend para el proyecto de pr�
 
 ### Interfaz 1
 
-![Interfaz 1](assets/img/readme/prueba-1.png)
+![Interfaz 1](https://raw.githubusercontent.com/AngelOU20/gl-prueba-frontend/main/src/assets/img/readme/prueba-1.png)
 
-Descripción de la Interfaz 1.
+La primera interfaz muestra una tabla con una lista de clientes. Esta tabla incluye operaciones CRUD (Crear, Leer, Actualizar, Eliminar), así como filtros y paginación para facilitar la gestión de los datos de los clientes.
 
 ### Interfaz 2
 
-![Interfaz 2](assets/img/readme/prueba-2.png)
+![Interfaz 2](https://raw.githubusercontent.com/AngelOU20/gl-prueba-frontend/main/src/assets/img/readme/prueba-2.png)
 
-Descripción de la Interfaz 2.
+La segunda interfaz presenta un formulario para agregar un nuevo cliente. Este formulario recopila la información necesaria para crear un nuevo registro de cliente en la base de datos.
+
+### Interfaz 3
+
+![Interfaz 3](https://raw.githubusercontent.com/AngelOU20/gl-prueba-frontend/main/src/assets/img/readme/prueba-3.png)
+
+La tercera interfaz es para editar la información de un cliente existente. Aquí, puedes actualizar los detalles del cliente según sea necesario.
+
+### Interfaz 4
+
+![Interfaz 3](https://raw.githubusercontent.com/AngelOU20/gl-prueba-frontend/main/src/assets/img/readme/prueba-4.png)
+
+La cuarta interfaz muestra el detalle de un cliente específico. Aquí puedes ver toda la información relacionada con un cliente seleccionado.
 
 ## Construcción
 
