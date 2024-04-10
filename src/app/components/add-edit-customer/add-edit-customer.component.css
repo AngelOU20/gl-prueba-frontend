@@ -1,0 +1,29 @@
+.card {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+
+.card-title {
+  font-weight: 500;
+  color: #7a7a7a;
+  font-size: 16px;
+}
+
+.card-content {
+  margin-top: 20px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 70%;
+  }
+}
