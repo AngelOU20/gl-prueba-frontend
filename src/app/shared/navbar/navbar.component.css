@@ -1,0 +1,11 @@
+.container-navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_img {
+  height: 50px;
+  margin-right: 16px;
+}

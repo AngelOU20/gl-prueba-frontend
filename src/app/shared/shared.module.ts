@@ -19,14 +19,17 @@ import { MatCardModule } from '@angular/material/card';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 // Components
 import { SpinnerComponent } from './spinner/spinner.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
   declarations: [
-    SpinnerComponent
+    SpinnerComponent,
+    NavbarComponent
   ],
   imports: [
     CommonModule,
@@ -43,6 +46,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
     MatSnackBarModule,
     MatProgressSpinnerModule,
     MatGridListModule,
+    MatToolbarModule,
     ReactiveFormsModule,
     HttpClientModule,
   ],
@@ -60,7 +64,9 @@ import { SpinnerComponent } from './spinner/spinner.component';
     MatSnackBarModule,
     MatProgressSpinnerModule,
     MatGridListModule,
+    MatToolbarModule,
     SpinnerComponent,
+    NavbarComponent,
     ReactiveFormsModule,
     HttpClientModule,
 
