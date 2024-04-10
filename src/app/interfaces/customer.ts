@@ -7,6 +7,4 @@ export interface Customer {
   city: string;
   country: string;
   isActive: boolean;
-  createdAt: Date;
-  updatedAt: Date;
 }
