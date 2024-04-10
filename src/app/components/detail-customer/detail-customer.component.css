@@ -1,0 +1,13 @@
+.card {
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+}
+
+.card-content {
+  margin-top: 20px;
+}
+
+.card-content div span {
+  font-weight: 500;
+}
