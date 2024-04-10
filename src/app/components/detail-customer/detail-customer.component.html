@@ -1,1 +1,43 @@
-<p>detail-customer works!</p>
+<header class="title">
+  <h1>Detalle de cliente</h1>
+</header>
+
+<app-spinner *ngIf="isLoading"></app-spinner>
+
+<section *ngIf="customer != null" class="container">
+  <mat-card class="card">
+    <button
+      routerLink="/list-customers"
+      mat-icon-button
+      aria-label="navigate before"
+      matTooltip="Regresar a la lista"
+    >
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+
+    <mat-card-header>
+      <mat-card-title>{{ customer.name }}</mat-card-title>
+      <mat-card-subtitle
+        >Cliente
+        {{ customer.isActive ? "Activo" : "Inactivo" }}</mat-card-subtitle
+      >
+    </mat-card-header>
+
+    <mat-card-content class="card-content">
+      <div>
+        <p><span>Email:</span> {{ customer.email }}</p>
+        <p><span>Celular:</span> {{ customer.phoneNumber }}</p>
+        <p>
+          <span>Localidad:</span> {{ customer.address }}, {{ customer.city }} -
+          {{ customer.country }}
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          reprehenderit eum quaerat natus rem earum praesentium sed doloribus
+          accusantium pariatur porro necessitatibus excepturi aliquid, cum
+          placeat sunt eligendi ex quis!
+        </p>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</section>
